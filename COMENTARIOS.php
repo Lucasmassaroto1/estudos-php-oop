@@ -201,3 +201,11 @@
     » Representa O Que A Entidade Pode Fazer
     » Exemplos: Ligar(), Comprar(), Falar(), Andar()
 -->
+
+<!--
+    _____________OO - PILAR DA HERANÇA_____________
+    »_______PARADIGMA DE ORIENTAÇÃO A OBJETOS_______
+    »_____________HERANÇA_____________
+    » Reutilizável
+    » Manutenção
+-->
