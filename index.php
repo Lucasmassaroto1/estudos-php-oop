@@ -85,7 +85,49 @@
         echo $x->getNome(). ' possui '. $x->getNumFilhos(). ' filho(s)'; */
     ?> -->
     <!-- _____________AULA 5 GETTERS E SETTERS MÁGICOS (OVERLOADING DE ATRIBUTOS E MÉTODOS)____________ -->
-    
+    <!-- <?php 
+        /* class Funcionario{
+            //Atributo
+            public $nome = null;
+            public $numFilhos = null;
+            public $telefone = null;
+            public $cargo = null;
+            public $salario = null;
+
+            //Getters && Setters (Overloading / Sobrecarga)
+            function __set($atributo, $valor){
+                $this->$atributo = $valor;
+            }
+            function __get($atributo){
+                return $this->$atributo;
+            }
+
+            //Método
+            function resumirCadFunc(){
+                return "$this->nome possui $this->numFilhos filho(s)";
+            }
+            function modificarNumFilhos($numFilhos){
+                // Afetar um atributo do objeto
+                $this->numFilhos = $numFilhos;
+            }
+        }
+        $y = new Funcionario();
+        $y->__set('nome', 'Lucas');
+        $y->__set('numFilhos', 2);
+        $y->__set('telefone', 44990402300);
+        $y->__set('cargo', 'Mecanico');
+        $y->__set('salario', 200);
+        //echo $y->resumirCadFunc();
+        echo $y->__get('nome'). ' possui: '. $y->__get('numFilhos'). ' filho(s), Seu numero de telefone é: '.$y->telefone.', Seu Cargo é: '. $y->cargo.', seu salario é: '.$y->__get('salario');
+        echo'<br>';
+        $x = new Funcionario();
+        $x->__set('nome', 'Massaroto');
+        $x->__set('numFilhos', 0);
+        $x->__set('telefone', 44990402506);
+        $x->__set('cargo', 'Desenvolvedor fullStack');
+        $x->__set('salario', 400);
+        echo $x->__get('nome'). ' possui: '. $x->__get('numFilhos'). ' filho(s), Seu numero de telefone é: '.$x->telefone.', Seu Cargo é: '. $x->cargo.', seu salario é: '.$x->__get('salario'); */
+    ?> -->
     <!-- _____________AULA 6 CHAMANDO MÉTODOS INTERNAMENMTE____________ -->
     
     <!-- _____________AULA 7 MÉTODOS CONSTRUTOR E DESTRUTOR (CONSTRUCT E DESTRUCT)____________ -->
