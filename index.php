@@ -129,7 +129,48 @@
         echo $x->__get('nome'). ' possui: '. $x->__get('numFilhos'). ' filho(s), Seu numero de telefone é: '.$x->telefone.', Seu Cargo é: '. $x->cargo.', seu salario é: '.$x->__get('salario'); */
     ?> -->
     <!-- _____________AULA 6 CHAMANDO MÉTODOS INTERNAMENMTE____________ -->
-    
+    <!-- <?php 
+        /* class Funcionario{
+            //Atributo
+            public $nome = null;
+            public $numFilhos = null;
+            public $telefone = null;
+            public $cargo = null;
+            public $salario = null;
+
+            //Getters && Setters (Overloading / Sobrecarga)
+            function __set($atributo, $valor){
+                $this->$atributo = $valor;
+            }
+            function __get($atributo){
+                return $this->$atributo;
+            }
+
+            //Método
+            function resumirCadFunc(){
+                return $this->__get('nome'). ' possui: '. $this->__get('numFilhos'). ' filho(s), Seu numero de telefone é: '.$this->telefone.', Seu Cargo é: '. $this->cargo.', seu salario é: '.$this->__get('salario');
+            }
+            function modificarNumFilhos($numFilhos){
+                // Afetar um atributo do objeto
+                $this->numFilhos = $numFilhos;
+            }
+        }
+        $y = new Funcionario();
+        $y->__set('nome', 'Lucas');
+        $y->__set('numFilhos', 2);
+        $y->__set('telefone', 44990402300);
+        $y->__set('cargo', 'Mecanico');
+        $y->__set('salario', 200);
+        echo $y->resumirCadFunc();
+        echo'<br>';
+        $x = new Funcionario();
+        $x->__set('nome', 'Massaroto');
+        $x->__set('numFilhos', 0);
+        $x->__set('telefone', 44990402506);
+        $x->__set('cargo', 'Desenvolvedor fullStack');
+        $x->__set('salario', 400);
+        echo $x->resumirCadFunc(); */
+    ?> -->
     <!-- _____________AULA 7 MÉTODOS CONSTRUTOR E DESTRUTOR (CONSTRUCT E DESTRUCT)____________ -->
     
     <!-- _____________AULA 8 OO - PILAR DA HERANÇA____________ -->
