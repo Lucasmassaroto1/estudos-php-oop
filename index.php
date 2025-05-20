@@ -318,7 +318,34 @@
         $caminhao->trocarMarcha(); */
     ?> -->
     <!-- _____________AULA 10 OO - PILAR DO ENCAPSULAMENTO PARTE 1____________ -->
-    
+    <?php 
+        class Pai{
+            private $nome = 'Lucas';
+            protected $sobrenome = 'Massaroto';
+            public $humor = 'Feliz';
+
+            public function __get($atributo){
+                return $this->$atributo;
+            }
+            public function __set($atributo, $value){
+                $this->$atributo = $value;
+            }
+
+            private function executarMania(){
+                echo 'Assobiar';
+            }
+            protected function responder(){
+                echo 'resonder';
+            }
+            public function executarAcao(){
+                echo 'executarAcao';
+            }
+        }
+        $pai = new Pai();
+        //echo $pai->humor;
+        echo $pai->sobrenome;
+
+    ?>
     <!-- _____________AULA 11 OO - PILAR DO ENCAPSULAMENTO PARTE 2____________ -->
     
     <!-- _____________AULA 12 ATRIBUTOS E MÉTODOS ESTÁTICOS____________ -->

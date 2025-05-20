@@ -216,3 +216,10 @@
     »_____________POLIMORFISMO_____________
     » SOBRESCRITA DE MÉTODOS
 -->
+
+<!--
+    _____________OO - PILAR DO ENCAPSULAMENTO_____________
+    »_______PARADIGMA DE ORIENTAÇÃO A OBJETOS_______
+    »_____________ENCAPSULAMENTO_____________
+    » Segurança
+-->
