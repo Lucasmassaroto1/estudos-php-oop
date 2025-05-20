@@ -13,7 +13,7 @@
     <!-- _____________AULA 3 OO - PILAR DA ABSTRAÇÃO_____________ -->
     <!-- <?php 
         //modelo
-        class Funcionario{
+        /* class Funcionario{
             //Atributo
             public $nome = 'Lucas';
             public $telefone = '44 99019-3487';
@@ -38,10 +38,52 @@
         echo $x->resumirCadFunc();
         echo'<br>';
         $x->modificarNumFilhos(2);
-        echo $x->resumirCadFunc();
+        echo $x->resumirCadFunc(); */
     ?> -->
     <!-- _____________AULA 4 GETTERS E SETTERS____________ -->
-    
+    <!-- <?php 
+        /* class Funcionario{
+            //Atributo
+            public $nome = null;
+            public $numFilhos = null;
+            public $telefone = null;
+
+            //Getters && Setters
+            function setNome($nome){
+                $this->nome = $nome;
+            }
+            function setNumFilhos($numFilhos){
+                $this->numFilhos = $numFilhos;
+            }
+
+            function getNome(){
+                return $this->nome;
+            }
+            function getNumFilhos(){
+                return $this->numFilhos;
+            }
+
+            //Método
+            function resumirCadFunc(){
+                return "$this->nome possui $this->numFilhos filho(s)";
+            }
+            function modificarNumFilhos($numFilhos){
+                // Afetar um atributo do objeto
+                $this->numFilhos = $numFilhos;
+            }
+        }
+        $y = new Funcionario();
+        $y->setNome('Lucas');
+        $y->setNumFilhos(2);
+        //echo $y->resumirCadFunc();
+        echo $y->getNome(). ' possui '. $y->getNumFilhos(). ' filho(s)';
+        echo'<br>';
+        $x = new Funcionario();
+        $x->setNome('Massaroto');
+        $x->setNumFilhos(0);
+        //echo $y->resumirCadFunc();
+        echo $x->getNome(). ' possui '. $x->getNumFilhos(). ' filho(s)'; */
+    ?> -->
     <!-- _____________AULA 5 GETTERS E SETTERS MÁGICOS (OVERLOADING DE ATRIBUTOS E MÉTODOS)____________ -->
     
     <!-- _____________AULA 6 CHAMANDO MÉTODOS INTERNAMENMTE____________ -->
