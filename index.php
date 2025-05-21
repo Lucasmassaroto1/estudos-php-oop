@@ -410,7 +410,26 @@
         $filho->x(); */
     ?> -->
     <!-- _____________AULA 12 ATRIBUTOS E MÉTODOS ESTÁTICOS____________ -->
-    
+    <!-- <?php 
+        /* class Exemplo{
+            public static $atribute1 = 'Atributo estatico';
+            public $atribute2 = 'Atributo normal';
+
+            public static function metod1(){
+                echo 'sou um metodo estatico';
+            }
+            public function metod2(){
+                echo 'sou um metodo normal';
+            }
+        }
+
+        // $x = new Exemplo();
+        echo Exemplo::$atribute1;
+        echo '<br>';
+        Exemplo::metod1();
+        echo Exemplo::metod1();
+        // $x->atribute2; */
+    ?> -->
     <!-- _____________AULA 12 + 1 INTERFACES____________ -->
     
     <!-- _____________AULA 14 NAMESPACES PARTE 1 - UTILIZANDO NAMESPACES PARA CLASSES E INTERFACES____________ -->
