@@ -11,7 +11,7 @@
     <!-- _____________AULA 2 INTRODUÇÃO A ORIENTAÇÃO A OBJETOS_____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 3 OO - PILAR DA ABSTRAÇÃO_____________ -->
-    <?php 
+    <!-- <?php 
         //modelo
         /* class Funcionario{
             //Atributo
@@ -39,9 +39,9 @@
         echo'<br>';
         $x->modificarNumFilhos(2);
         echo $x->resumirCadFunc(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 4 GETTERS E SETTERS____________ -->
-    <?php 
+    <!-- <?php 
         /* class Funcionario{
             //Atributo
             public $nome = null;
@@ -83,9 +83,9 @@
         $x->setNumFilhos(0);
         //echo $y->resumirCadFunc();
         echo $x->getNome(). ' possui '. $x->getNumFilhos(). ' filho(s)'; */
-    ?>
+    ?> -->
     <!-- _____________AULA 5 GETTERS E SETTERS MÁGICOS (OVERLOADING DE ATRIBUTOS E MÉTODOS)____________ -->
-    <?php 
+    <!-- <?php 
         /* class Funcionario{
             //Atributo
             public $nome = null;
@@ -127,9 +127,9 @@
         $x->__set('cargo', 'Desenvolvedor fullStack');
         $x->__set('salario', 400);
         echo $x->__get('nome'). ' possui: '. $x->__get('numFilhos'). ' filho(s), Seu numero de telefone é: '.$x->telefone.', Seu Cargo é: '. $x->cargo.', seu salario é: '.$x->__get('salario'); */
-    ?>
+    ?> -->
     <!-- _____________AULA 6 CHAMANDO MÉTODOS INTERNAMENMTE____________ -->
-    <?php 
+    <!-- <?php 
         /* class Funcionario{
             //Atributo
             public $nome = null;
@@ -170,9 +170,9 @@
         $x->__set('cargo', 'Desenvolvedor fullStack');
         $x->__set('salario', 400);
         echo $x->resumirCadFunc(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 7 MÉTODOS CONSTRUTOR E DESTRUTOR (CONSTRUCT E DESTRUCT)____________ -->
-    <?php 
+    <!-- <?php 
         /* class Pessoa{
             public $nome = null;
 
@@ -195,9 +195,9 @@
         echo '<br>'. $pessoa->correr();
         echo '<br>';
         //unset($pessoa); // proposital */
-    ?>
+    ?> -->
     <!-- _____________AULA 8 OO - PILAR DA HERANÇA____________ -->
-    <?php 
+    <!-- <?php 
         /* class Carro extends Veiculo{
             public $teto_solar = true;
 
@@ -258,9 +258,9 @@
         $moto->acelerar();
         echo '<br>';
         $moto->freiar(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 9 OO - PILAR DO POLIMORFISMO____________ -->
-    <?php 
+    <!-- <?php 
         /* class Carro extends Veiculo{
             public $teto_solar = true;
 
@@ -316,9 +316,9 @@
         $moto->trocarMarcha();
         echo'<br>';
         $caminhao->trocarMarcha(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 10 OO - PILAR DO ENCAPSULAMENTO PARTE 1____________ -->
-    <?php 
+    <!-- <?php 
         /* class Pai{
             private $nome = 'Lucas';
             protected $sobrenome = 'Massaroto';
@@ -349,9 +349,9 @@
         $pai = new Pai();
         //echo $pai->humor;
         echo $pai->executarAcao(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 11 OO - PILAR DO ENCAPSULAMENTO PARTE 2____________ -->
-    <?php 
+    <!-- <?php 
         /* class Pai{
             private $nome = 'Lucas';
             protected $sobrenome = 'Massaroto';
@@ -408,9 +408,9 @@
         $filho->executarAcao();
         echo '<br>';
         $filho->x(); */
-    ?>
+    ?> -->
     <!-- _____________AULA 12 ATRIBUTOS E MÉTODOS ESTÁTICOS____________ -->
-    <?php 
+    <!-- <?php 
         /* class Exemplo{
             public static $atribute1 = 'Atributo estatico';
             public $atribute2 = 'Atributo normal';
@@ -429,9 +429,9 @@
         Exemplo::metod1();
         echo Exemplo::metod1();
         // $x->atribute2; */
-    ?>
+    ?> -->
     <!-- _____________AULA 12 + 1 INTERFACES____________ -->
-    <?php 
+    <!-- <?php 
         /* interface EquipamentosEletronicosInterface{
             public function ligar();
             public function desligar();
@@ -509,9 +509,56 @@
                 echo 'Comendo';
             }
         } */
-    ?>
+    ?> -->
     <!-- _____________AULA 14 NAMESPACES PARTE 1 - UTILIZANDO NAMESPACES PARA CLASSES E INTERFACES____________ -->
-    
+    <!-- <?php 
+        /* namespace A;
+        class Client implements \B\CadastroInterface{
+            public $nome = 'Lucas';
+            public function __construct(){
+                echo'<pre>';
+                    print_r(get_class_methods($this));
+                echo'</pre>';
+            }
+            public function __get($atribute){
+                return $this->$atribute;
+            }
+            public function salvar(){
+                echo 'Salvar';
+            }
+            public function remover(){
+                echo 'Remover';
+            }
+        }
+        interface CadastroInterface{
+            public function salvar();
+        }
+        namespace B;
+        class Client implements \A\CadastroInterface{
+            public $nome = 'massaroto';
+            public function __construct(){
+                echo'<pre>';
+                    print_r(get_class_methods($this));
+                echo'</pre>';
+            }
+            public function __get($atribute){
+                return $this->$atribute;
+            }
+            public function remover(){
+                echo 'Remover';
+            }
+            public function salvar(){
+                echo 'Salvar';
+            }
+        }
+        interface CadastroInterface{
+            public function remover();
+        }
+
+        $c = new \B\Client();
+        print_r($c);
+        echo $c->__get('nome'); */
+    ?> -->
     <!-- _____________AULA 15 NAMESPACES PARTE 2 - IMPORTANDO E APELIDANDO NAMESPACES (USE E ALIASING)____________ -->
     
     <!-- _____________AULA 16 TRATAMENTO DE ERROS - TRY, CATCH, FINALLY E THROW____________ -->
