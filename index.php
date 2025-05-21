@@ -351,7 +351,64 @@
         echo $pai->executarAcao(); */
     ?> -->
     <!-- _____________AULA 11 OO - PILAR DO ENCAPSULAMENTO PARTE 2____________ -->
-    
+    <!-- <?php 
+        /* class Pai{
+            private $nome = 'Lucas';
+            protected $sobrenome = 'Massaroto';
+            public $humor = 'Feliz';
+
+            public function __get($atributo){
+                return $this->$atributo;
+            }
+            public function __set($atributo, $value){
+                $this->$atributo = $value;
+            }
+
+            private function executarMania(){
+                echo 'Assobiar';
+            }
+            protected function responder(){
+                echo 'resonder';
+            }
+            public function executarAcao(){
+                $x = rand(1, 10);
+                if($x >= 1 && $x <= 8){
+                    $this->executarMania();
+                }else{
+                    $this->responder();
+                }
+            }
+        }
+        class Filho extends Pai{
+            public function __construct(){
+                echo '<pre>';
+                    print_r(get_class_methods($this));
+                echo '</pre>';
+            }
+            private function executarMania(){
+                echo 'Assobiar';
+            }
+            protected function responder(){
+                echo 'ola';
+            }
+            public function x(){
+                $this->executarMania();
+            }
+        }
+
+        $pai = new Pai();
+        //echo $pai->humor;
+        echo $pai->executarAcao();
+
+        $filho = new Filho();
+        echo '<pre>';
+        print_r($filho);
+        echo '</pre>';
+
+        $filho->executarAcao();
+        echo '<br>';
+        $filho->x(); */
+    ?> -->
     <!-- _____________AULA 12 ATRIBUTOS E MÉTODOS ESTÁTICOS____________ -->
     
     <!-- _____________AULA 12 + 1 INTERFACES____________ -->
