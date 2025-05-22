@@ -560,7 +560,17 @@
         echo $c->__get('nome'); */
     ?> -->
     <!-- _____________AULA 15 NAMESPACES PARTE 2 - IMPORTANDO E APELIDANDO NAMESPACES (USE E ALIASING)____________ -->
-    
+    <!-- <?php 
+        /* require './biblioteca/lib1/lib1.php';
+        require './biblioteca/lib2/lib2.php';
+
+        use A\Client as C1;
+        use B\Client as C2;
+
+        $c = new C1();
+        print_r($c);
+        echo $c->__get('nome'); */
+    ?> -->
     <!-- _____________AULA 16 TRATAMENTO DE ERROS - TRY, CATCH, FINALLY E THROW____________ -->
     
     <!-- _____________AULA 17 TRATAMENTO DE ERROS - EXCEÇÕES CUSTOMIZADAS____________ -->
