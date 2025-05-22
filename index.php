@@ -631,7 +631,7 @@
     <!-- _____________AULA 22 APP SEND MAIL - ADICIONANDO A BIBLIOTECA PHPMAILER AO PROJETO____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 23 APP SEND MAIL - CONFIGURANDO O PHPMAILER E ENVIANDO E-MAILS____________ -->
-    
+    <!-- Andamento -->
     <!-- _____________AULA 23 + 1 IMPORTANTE - AJUSTANDO AS CONFIGURAÇÕES DE ACESSO AO SMTP DO GMAIL____________ -->
     
     <!-- _____________AULA 25 APP SEND MAIL - ENVIANDO EMAILS COM BASE NOS PARÂMETROS DO FRONT-END____________ -->
