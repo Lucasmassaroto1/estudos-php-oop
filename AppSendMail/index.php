@@ -19,7 +19,7 @@
                     <form action="">
                         <div class="form-group">
                             <label for="para">para</label>
-                            <input type="text" id="para" class="form-control" placeholder="XXX@dominio.com">
+                            <input type="text" id="para" class="form-control" placeholder="exemplo.email@dominio.com">
                         </div>
                         <div class="form-group">
                             <label for="assunto">Assunto</label>
