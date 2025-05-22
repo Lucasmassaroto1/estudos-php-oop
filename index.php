@@ -572,7 +572,31 @@
         echo $c->__get('nome'); */
     ?> -->
     <!-- _____________AULA 16 TRATAMENTO DE ERROS - TRY, CATCH, FINALLY E THROW____________ -->
-    
+    <!-- <?php 
+        /* try{
+            // Uma lógica
+            echo '<h3> === Try === </h3>';
+            
+            $sql = 'Select * from clientes';
+            //mysql_query($sql); // Força um erro para teste
+
+            if(!file_exists('require_arquivo_a.php')){
+                throw new Exception('O arquivo em questão deveria estar disponivel as '.date('d/m/Y H:i:s').' mas não estava. Vamos seguir mesmo assim');
+            }
+            
+        } catch(Error $e){
+            echo '<h3> === Catch Error === </h3>';
+            echo '<p style="color: red;">'.$e.'</p>';
+            // Armazena o erro no banco de dados
+
+        } catch(Exception $e){
+            echo '<h3> === Catch Exception === </h3>';
+            echo '<p style="color: red;">'.$e.'</p>';
+            // Armazena o erro no banco de dados
+        } finally{
+            echo '<h3> === Finally === </h3>';
+        } */
+    ?> -->
     <!-- _____________AULA 17 TRATAMENTO DE ERROS - EXCEÇÕES CUSTOMIZADAS____________ -->
     
     <!-- _____________AULA 18 APP SEND MAIL - INTRODUÇÃO____________ -->
