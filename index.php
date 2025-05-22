@@ -629,7 +629,7 @@
     <!-- _____________AULA 21 APP SEND MAIL - CRAINDO E INSTANCIANDO A CLASSE MENSAGEM____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 22 APP SEND MAIL - ADICIONANDO A BIBLIOTECA PHPMAILER AO PROJETO____________ -->
-    
+    <!-- Concluido -->
     <!-- _____________AULA 23 APP SEND MAIL - CONFIGURANDO O PHPMAILER E ENVIANDO E-MAILS____________ -->
     
     <!-- _____________AULA 23 + 1 IMPORTANTE - AJUSTANDO AS CONFIGURAÇÕES DE ACESSO AO SMTP DO GMAIL____________ -->
