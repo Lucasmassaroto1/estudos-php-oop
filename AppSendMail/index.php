@@ -16,18 +16,18 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card-body font-weight-bold">
-                    <form action="">
+                    <form action="processa_envio.php" method="POST">
                         <div class="form-group">
                             <label for="para">para</label>
-                            <input type="text" id="para" class="form-control" placeholder="exemplo.email@dominio.com">
+                            <input type="text" name="para" id="para" class="form-control" placeholder="exemplo.email@dominio.com">
                         </div>
                         <div class="form-group">
                             <label for="assunto">Assunto</label>
-                            <input type="text" id="assunto" class="form-control" placeholder="Assunto do e-mail">
+                            <input type="text" name="assunto" id="assunto" class="form-control" placeholder="Assunto do e-mail">
                         </div>
                         <div class="form-group">
                             <label for="mensagem">Mensgaem</label>
-                            <textarea id="mensagem" class="form-control"></textarea>
+                            <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
                     </form>

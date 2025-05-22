@@ -625,7 +625,7 @@
     <!-- _____________AULA 19 APP SEND MAIL - INICIANDO PROJETO____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 20 APP SEND MAIL - ENVIANDO DADOS DO FRONT-END PARA O BACK-END VIA MÉTODO POST____________ -->
-    
+    <!-- Concluido -->
     <!-- _____________AULA 21 APP SEND MAIL - CRAINDO E INSTANCIANDO A CLASSE MENSAGEM____________ -->
     
     <!-- _____________AULA 22 APP SEND MAIL - ADICIONANDO A BIBLIOTECA PHPMAILER AO PROJETO____________ -->
