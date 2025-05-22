@@ -598,7 +598,28 @@
         } */
     ?> -->
     <!-- _____________AULA 17 TRATAMENTO DE ERROS - EXCEÇÕES CUSTOMIZADAS____________ -->
-    
+    <!-- <?php 
+        /* class MinhaExceptionCustomizada extends Exception{
+            private $erro = '';
+            public function __construct($erro){
+                $this->erro = $erro;
+            }
+            public function exibirMensagemErroCustomizada(){
+                echo '<div style="border: solid 1px black; padding: 15px; background-color: red; color: white;">';
+                echo $this->erro;
+                echo '</div>';
+            }
+        }
+        try{
+            throw new MinhaExceptionCustomizada('Este é um Erro forçado');
+            //Error (PHP)
+            //Exception (programadores)
+            //Customizadas (programadores)
+
+        } catch (MinhaExceptionCustomizada $e){
+            $e->exibirMensagemErroCustomizada();
+        } */
+    ?> -->
     <!-- _____________AULA 18 APP SEND MAIL - INTRODUÇÃO____________ -->
     
     <!-- _____________AULA 19 APP SEND MAIL - INICIANDO PROJETO____________ -->
