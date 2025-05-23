@@ -633,9 +633,9 @@
     <!-- _____________AULA 23 APP SEND MAIL - CONFIGURANDO O PHPMAILER E ENVIANDO E-MAILS____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 23 + 1 IMPORTANTE - AJUSTANDO AS CONFIGURAÇÕES DE ACESSO AO SMTP DO GMAIL____________ -->
-    
+    <!-- Concluido -->
     <!-- _____________AULA 25 APP SEND MAIL - ENVIANDO EMAILS COM BASE NOS PARÂMETROS DO FRONT-END____________ -->
-    
+    <!-- Concluido -->
     <!-- _____________AULA 26 APP SEND MAIL - MELHORANDO O FEEDBACK VISUAL____________ -->
     
     <!-- _____________AULA 27 APP SEND MAIL - DE OLHO NA SEGURANÇA DO BACK-END____________ -->
