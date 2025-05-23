@@ -637,7 +637,7 @@
     <!-- _____________AULA 25 APP SEND MAIL - ENVIANDO EMAILS COM BASE NOS PARÂMETROS DO FRONT-END____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 26 APP SEND MAIL - MELHORANDO O FEEDBACK VISUAL____________ -->
-    
+    <!-- Concluido -->
     <!-- _____________AULA 27 APP SEND MAIL - DE OLHO NA SEGURANÇA DO BACK-END____________ -->
     
 </body>
