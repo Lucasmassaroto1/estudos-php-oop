@@ -34,7 +34,7 @@
     $mensagem->__set('assunto', $_POST['assunto']);
     $mensagem->__set('mensagem', $_POST['mensagem']);
 
-    //print_r($mensagem);
+    print_r($mensagem);
 
     if(!$mensagem->mensagemValida()){
         echo 'Mensagem invalida';
@@ -46,16 +46,16 @@
         //Server settings
         $mail->SMTPDebug = 2;                                       //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp-relay.gmail.com';                     //Set the SMTP server to send through
+        $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'Username@gmail.com';                     //SMTP username
-        $mail->Password   = 'Password';                               //SMTP password
-        $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+        $mail->Username   = 'lucasmassaroto17@gmail.com';                     //SMTP username
+        $mail->Password   = '';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('exemplo@gmail.com', 'Lucas');
-        $mail->addAddress('exemplo@gmail.com', 'Lucas User');     //Add a recipient
+        $mail->setFrom('lucasmassaroto17@gmail.com', 'Lucas');
+        $mail->addAddress($mensagem->__get('para'));     //Add a recipient
         //$mail->addReplyTo('info@example.com', 'Information');
         //$mail->addCC('cc@example.com');
         //$mail->addBCC('bcc@example.com');
@@ -66,12 +66,12 @@
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Ola';
-        $mail->Body    = 'Oi eu sou o conteudo do <b>E mail</b>.';
-        $mail->AltBody = 'Oi eu sou o conteudo do E mail.';
+        $mail->Subject = $mensagem->__get('assunto');
+        $mail->Body    = $mensagem->__get('mensagem');
+        $mail->AltBody = 'É necessario utilizar um client que suporte HTML para ter acesso total ao conteúdo dessa mensagem.';
 
         $mail->send();
-        echo 'Message has been sent';
+        echo 'E-mail enviado com sucesso!';
     } catch (Exception $e) {
         echo "Não foi possivel enviar este email! Por favor tente novamente mais tarde.";
         echo "Detalhes do erro: {$mail->ErrorInfo}";
