@@ -39,7 +39,7 @@
 
     if(!$mensagem->mensagemValida()){
         echo 'Mensagem invalida';
-        header('Location: index.php');
+        header('Location: ../index.php');
     }
 
     $mail = new PHPMailer(true);
@@ -90,7 +90,7 @@
 <body>
     <div class="container">
         <div class="py-3 text-center">
-            <img src="logo.png" width="72" height="72" class="d-block mx-auto mb-2">
+            <img src="../logo.png" width="72" height="72" class="d-block mx-auto mb-2">
             <h2>Send Mail</h2>
             <p class="lead">Seu app de envio de e-mails particular!</p>
         </div>
@@ -100,7 +100,7 @@
                     <div class="container">
                         <h1 class="display-4 text-success">Sucesso</h1>
                         <p><?= $mensagem->status['descricao_status'] ?></p>
-                        <a href="index.php" class="btn btn-success btn-lg mt-5 text-white">Voltar</a>
+                        <a href="../index.php" class="btn btn-success btn-lg mt-5 text-white">Voltar</a>
                     </div>
                 <?}?>
 
@@ -108,7 +108,7 @@
                     <div class="container">
                         <h1 class="display-4 text-danger">Ops!</h1>
                         <p><?= $mensagem->status['descricao_status'] ?></p>
-                        <a href="index.php" class="btn btn-success btn-lg mt-5 text-white">Voltar</a>
+                        <a href="../index.php" class="btn btn-success btn-lg mt-5 text-white">Voltar</a>
                     </div>
                 <?}?>
             </div>

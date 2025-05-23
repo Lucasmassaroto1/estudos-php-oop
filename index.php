@@ -639,6 +639,6 @@
     <!-- _____________AULA 26 APP SEND MAIL - MELHORANDO O FEEDBACK VISUAL____________ -->
     <!-- Concluido -->
     <!-- _____________AULA 27 APP SEND MAIL - DE OLHO NA SEGURANÇA DO BACK-END____________ -->
-    
+    <!-- Concluido -->
 </body>
 </html>

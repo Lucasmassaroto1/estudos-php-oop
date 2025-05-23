@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card-body font-weight-bold">
-                    <form action="processa_envio.php" method="POST">
+                    <form action="appsend/processa_envio.php" method="POST">
                         <div class="form-group">
                             <label for="para">para</label>
                             <input type="text" name="para" id="para" class="form-control" placeholder="exemplo.email@dominio.com">
